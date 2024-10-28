@@ -22,6 +22,6 @@ jobs:
           echo "Head Commit SHA: ${{ github.sha }}"
           
       - name: "Run My First Action"
-        uses: 2408-capstone-team5/fake-setup-harrier-action@v0
+        uses: 2408-capstone-team5/fake-setup-harrier-action@v1
         with:
           example_input: "${{ secrets.MY_SECRET }}"
