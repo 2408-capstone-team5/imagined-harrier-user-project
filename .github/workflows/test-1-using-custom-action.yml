@@ -1,4 +1,4 @@
-name: "Run Fake Setup Harrier Action V4.2"
+name: "Run Fake Setup Harrier Action V4.3"
 on:
   workflow_dispatch:  # Allows manual triggering
 
@@ -39,7 +39,7 @@ jobs:
         run: npm install
   
       - name: "Run My First Action"
-        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.2
+        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.3
         with:
           my-secret: "${{ secrets.MY_SECRET }}"
           your-secret: "${{ github.repository_id }}"
