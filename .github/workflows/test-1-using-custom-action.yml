@@ -1,4 +1,4 @@
-name: "Run Fake Setup Harrier Action V4.4"
+name: "Run Fake Setup Harrier Action V4.5"
 on:
   workflow_dispatch:  # Allows manual triggering
 
@@ -32,7 +32,7 @@ jobs:
           echo "API URL: ${{ github.api_url }}"
 
       - name: "Run My First Action"
-        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.4
+        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.5
         with:
           my-secret: "${{ secrets.MY_SECRET }}"
           your-secret: "${{ github.repository_id }}"
