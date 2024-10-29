@@ -37,6 +37,9 @@ jobs:
           my-secret: "${{ secrets.MY_SECRET }}"
           your-secret: "${{ github.repository_id }}"
           runner-os: "${{ runner.os }}"
+          org: "${{github.repository_owner}}"
+          joel-pat: "${{secrets.JOEL_PAT}}"
+          
       - name: "Fetch Registration Token for Harrier runner"
         run: |
           echo "hello world"
