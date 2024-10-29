@@ -32,7 +32,7 @@ jobs:
           echo "API URL: ${{ github.api_url }}"
         
       - name: "Run My First Action"
-        uses: 2408-capstone-team5/fake-setup-harrier-action@latest
+        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.1
         with:
           my-secret: "${{ secrets.MY_SECRET }}"
           your-secret: "${{ github.repository_id }}"
