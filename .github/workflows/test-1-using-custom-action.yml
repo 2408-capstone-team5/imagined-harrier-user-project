@@ -41,7 +41,7 @@ jobs:
         run: |
           echo "hello world"
           echo ${{github.repository_owner}}
-          echo ${{secrets.GITHUB_TOKEN}}
+          echo ${{secrets.JOEL_PAT}}
           curl -X POST \
             -H "Authorization: token ${{secrets.JOEL_PAT}}" \
             -H "Accept: application/vnd.github.v3+json" \
