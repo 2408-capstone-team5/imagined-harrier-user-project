@@ -24,11 +24,19 @@ jobs:
           echo "SHA: ${{ github.sha }}"
           echo "Server URL: ${{ github.server_url }}"
           echo "API URL: ${{ github.api_url }}"
-          
+        
       - name: "Run My First Action"
         uses: 2408-capstone-team5/fake-setup-harrier-action@v4
         with:
           my-secret: "${{ secrets.MY_SECRET }}"
           your-secret: "${{ github.repository_id }}"
           runner-os: "${{ runner.os }}"
-          
+      - name: "Fetch Registration Token for Harrier runner"
+        run: |
+          echo "hello world"
+          echo ${{secrets.GITHUB_TOKEN}}
+        # run: |
+        #   curl -X POST \
+        #     -H "Authorization: token YOUR_GITHUB_PAT" \
+        #     -H "Accept: application/vnd.github.v3+json" \
+        #     https://api.github.com/repos/REPO/actions/runners/registration-token
