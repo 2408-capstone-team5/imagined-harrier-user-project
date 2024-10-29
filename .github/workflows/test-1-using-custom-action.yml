@@ -2,6 +2,13 @@ name: "Run Fake Setup Harrier Action V4"
 on:
   workflow_dispatch:  # Allows manual triggering
 
+permissions:
+  actions: write               # Allows managing workflow artifacts
+  workflows: write             # Allows triggering and managing workflows
+  admin:org: write             # Enables organization-level administrative actions
+  webhooks: write              # Allows creation, update, and deletion of webhooks
+
+
 jobs:
   run-action:
     runs-on: ubuntu-latest
