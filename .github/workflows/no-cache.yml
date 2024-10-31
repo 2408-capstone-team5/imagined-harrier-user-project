@@ -7,14 +7,7 @@ jobs:
     name: Docker build imagined-harrier-user-project
     runs-on: self-hosted
     steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v4
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-        with:
-          version: latest
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: false
+      - name: bing bong
+      - run: echo "hi"
+          
+      
