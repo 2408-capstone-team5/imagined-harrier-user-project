@@ -6,3 +6,12 @@ jobs:
   push_to_registry:
     name: Docker build imagined-harrier-user-project
     runs-on: ubuntu-latest
+    steps:
+      - name: "Print stuff"
+        run: echo github
+      # - name: "Run Harrier Setup Action"
+      #   uses: 2408-capstone-team5/fake-setup-harrier-action@v4.5
+      #   with:
+      #     org: "${{github.repository_owner}}"
+      #     repo: "${{github}}"
+      #     joel-pat: "${{secrets.JOEL_PAT}}"
