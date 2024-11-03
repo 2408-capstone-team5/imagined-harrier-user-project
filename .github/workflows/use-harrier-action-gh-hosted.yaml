@@ -1,4 +1,4 @@
-name: (github-hosted) Build Docker NO CACHE self-hosted
+name: (github-hosted) use Harrier action
 on:
   workflow_dispatch
 
@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Run Harrier Setup Action"
-        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.5
+        uses: 2408-capstone-team5/fake-setup-harrier-action@v4.6
         with:
           org: ${{github.repository_owner}}
           repo: ${{github.repository}}
