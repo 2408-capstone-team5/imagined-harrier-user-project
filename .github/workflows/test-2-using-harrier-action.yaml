@@ -12,4 +12,4 @@ jobs:
         with:
           org: ${{github.repository_owner}}
           repo: ${{github.repository}}
-          personal-access-token: ${{secrets.JOEL_PAT}}
+          personal-access-token: ${{secrets.personal_access_token}}
