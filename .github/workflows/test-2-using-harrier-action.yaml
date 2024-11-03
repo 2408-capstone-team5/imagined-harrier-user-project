@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Print stuff"
-        run: echo github
+        run: echo "${{github}}"
       # - name: "Run Harrier Setup Action"
       #   uses: 2408-capstone-team5/fake-setup-harrier-action@v4.5
       #   with:
