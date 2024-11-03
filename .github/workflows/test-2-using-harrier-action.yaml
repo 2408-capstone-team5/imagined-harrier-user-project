@@ -1,0 +1,8 @@
+name: (github-hosted) Build Docker NO CACHE self-hosted
+on:
+  workflow_dispatch
+
+jobs:
+  push_to_registry:
+    name: Docker build imagined-harrier-user-project
+    runs-on: ubuntu-latest
